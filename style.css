@@ -1,0 +1,14 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: 60px 600px;
+    grid-template-columns: 200px 1000px;
+}
+
+.wrapper div {
+    border: solid 0px;
+}
+
+.wrapper img {
+  max-width: 150px;
+  height: auto;
+}
