@@ -1,14 +1,72 @@
-.wrapper {
+@font-face {
+  font-family: 'Cubic';
+  src:  url('Cubic_11.woff') format("woff"),
+        url('Cubic_11.ttf') format("truetype");
+}
+
+.head {
     display: grid;
-    grid-template-rows: 60px 600px;
-    grid-template-columns: 200px 1000px;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 5fr;
+    background-color: #585858;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
-.wrapper div {
-    border: solid 0px;
+.logo {
+    display: flex;
+    align-items: center; /* 垂直置中 */
+    padding-left: 15px;  /* 往右推一點 */
+    padding-bottom: 3px;  /* 往右推一點 */
 }
 
-.wrapper img {
-  max-width: 150px;
-  height: auto;
+.logo img {
+    max-width: 135px;
+    height: auto;
+}
+
+.navigator {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 20px; 
+}
+
+.menu-image1 {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    transition: 0.2s ease-in-out;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    cursor: pointer;
+}
+
+.menu-container:hover .menu-image1 {
+    content: url('image_animated.gif');
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Cubic' ;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.subtitle {
+    font-family: 'Cubic' ;
+    font-size: 10px;
+    color: #ffffff;
+    margin-top: 1px;
 }
