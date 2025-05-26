@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'Cubic';
-  src:  url('Cubic_11.woff') format("woff"),
-        url('Cubic_11.ttf') format("truetype");
+    font-family: 'Cubic';
+    src:  url('Cubic_11.woff') format("woff"),
+          url('Cubic_11.ttf') format("truetype");
 }
 
 .top-background {
@@ -95,6 +95,33 @@
     flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .menu-image1 {
+    display: inline-block;
+  }
+  .menu-text  {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-image2 {
+    display: inline-block;
+  }
+  .menu-text  {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-image3 {
+    display: inline-block;
+  }
+  .menu-text  {
+    display: none;
+  }
+}
+
 .title {
     font-family: 'Cubic' ;
     font-size: 16px;
@@ -109,25 +136,28 @@
 }
 
 .lower-section {
-  position: relative;
-  margin-bottom: 100px;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 .logo-overlay {
   position: absolute;
-  top: -125px; /* 根據需要調整讓 logo 壓在線上 */
+  top: -100px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
+  width: 100%;
+  text-align: center;
 }
 
 .logo-overlay img {
-    height: 250px;
-    width: auto; /* 根據你的 logo 調整大小 */
-  
+    height: 200px;
+    width: auto;
+    display: inline-block;
 }
 
 .lower-background {
+    padding-top: 50px;
     height: 500px;
     background-image:
     linear-gradient(to top, rgba(0, 0, 0, 0) 60%, #303030 100%),
@@ -140,60 +170,60 @@
 }
 
 .mc-button {
-  position: absolute;
-  left: 5%;
-  top: 70%;
-  padding: 14px 24px;
-  background-color: #5dbcd2;
-  color: #ffffff;
-  font-family: 'Cubic', sans-serif;
-  border-radius: 12px;
-  text-decoration: none;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  z-index: 5;
-  max-width: 260px;
+    position: absolute;
+    left: 5%;
+    top: 60%;
+    padding: 14px 24px;
+    background-color: #5dbcd2;
+    color: #ffffff;
+    font-family: 'Cubic', sans-serif;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 5;
+    max-width: 260px;
 }
 
 .mc-button:hover {
-  background-color: #40a2b5;
-  transform: translateY(-2px);
+    background-color: #40a2b5;
+    transform: translateY(-2px);
 }
 
 .btn-title {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.2;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
 }
 
 .btn-subtitle {
-  font-size: 12px;
-  opacity: 0.9;
-  margin-top: 4px;
+    font-size: 12px;
+    opacity: 0.9;
+    margin-top: 4px;
 }
 
 .game-description {
-  max-width: 80%;
-  margin: 100px auto; /* 垂直與水平置中 */
-  padding: 20px;
-  text-align: center;
-  color: #ffffff;
-  font-family: 'Cubic', sans-serif;
-  line-height: 1.8;
+    max-width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Cubic', sans-serif;
+    line-height: 1.8;
 }
 
 .game-description h2 {
-  font-size: 40px;
-  margin-bottom: 15px;
-  color: #ffd700;
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #ffd700;
 }
 
 .game-description p {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 a {
@@ -204,121 +234,185 @@ a {
 }
 
 .game-showcase {
-  padding: 60px 20px;
-  background-color: #202020;
-  text-align: center;
-  color: #fff;
+    padding: 60px 20px;
+    background-color: #202020;
+    text-align: center;
+    color: #fff;
 }
 
 .game-showcase h2 {
-  font-size: 40px;
-  margin-bottom: 50px;
-  color: #ffd700;
-  font-family: 'Cubic', sans-serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #ffd700;
+    font-family: 'Cubic', sans-serif;
 }
 
 .game-card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
 }
 
 .game-card {
-  width: 100%; /* 卡片寬度，可依需求調整 */
-  margin: 10px;
-  background-color: #444;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
-  transition: transform 0.2s ease;
+    width: 100%;
+    margin: 10px;
+    background-color: #444;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    transition: transform 0.2s ease;
 }
 
 .game-card:hover {
-  transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+@media (max-width: 768px) {
+    a {
+    width: 60%;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+  .game-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-card {
+    width: 100%;
+  }
 }
 
 .game-image {
-  position: relative;
-  width: 100%;
-  padding-top: 100%; /* 1:1 比例 */
-  background-color: #333;
-  overflow: hidden;
-  border-radius: 10px;
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .game-image img {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .game-card:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .game-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  padding: 12px 0px;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
-  font-family: 'Cubic', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 12px 0px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-family: 'Cubic', sans-serif;
 }
 
 .game-info h3 {
-  font-size: 16px;
-  margin: 0 0 4px 0;
+    font-size: 16px;
+    margin: 0 0 4px 0;
 }
 
 .game-info p {
-  font-size: 13px;
-  margin: 0 0 2px 0;
-  color: #ccc;
+    font-size: 13px;
+    margin: 0 0 2px 0;
+    color: #ccc;
 }
 
 .game-info span {
-  font-size: 11px;
-  color: #aaa;
+    font-size: 11px;
+    color: #aaa;
 }
 
 .game-card:hover .game-info {
-  transform: translateY(0%);
+    transform: translateY(0%);
 }
 
-.copyright-section {
-  display: flex;
-  align-items: flex-start; /* 頂端對齊 */
-  gap: 20px; /* 左右間距 */
-  padding: 20px;
-  max-width: 100%;
-  margin: 40px auto; /* 中間置中 */
+@media (max-width: 768px) {
+    .game-info {
+        transform: translateY(0) !important;
+        position: relative;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 12px 0px;
+    }
+
+    .game-card:hover .game-info {
+        transform: translateY(0);
+    }
 }
 
-.copyright-title {
+.disclammer-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+.disclammer-title {
     color: #ffd700;
-    flex: 0 0 150px; /* 固定寬度 150px */
+    flex: 0 0 auto;
     font-size: 28px;
     font-weight: bold;
     line-height: 1.2;
-    border-right: 2px solid #555; /* 右側加條分隔線 */
+    border-right: 2px solid #555;
     padding-right: 20px;
     padding-left: 20px;
     font-family: 'Cubic', sans-serif;
 }
 
-.copyright-text {
+.disclammer-text {
     color:#fff;
-  flex: 1; /* 剩餘寬度 */
-  font-size: 16px;
-  line-height: 1.5;
-  font-family:sans-serif;
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 20px;
+    padding-left: 0px;
+    font-family:sans-serif;
+}
+
+@media (max-width: 768px) {
+    .disclammer-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .disclammer-title {
+        border-right: none;
+        border-bottom: 2px solid #555;
+        padding-bottom: 12px;
+        margin-bottom: 8px;
+        padding-right: 0px;
+        padding-left: 0px;
+        width: 100%;
+        text-align: left;
+        line-height: 1.2;
+    }
+
+    h2.disclammer-title {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .disclammer-text {
+        font-size: 12px; 
+        width: 100%;
+        margin: 0;  
+        padding: 0;
+    }
 }
