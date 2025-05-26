@@ -256,9 +256,9 @@ a {
 
 .game-card {
     width: 100%;
-    margin: 10px;
+    margin: 0px;
     background-color: #444;
-    border-radius: 0px;
+    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0,0,0,0.6);
@@ -271,7 +271,7 @@ a {
 
 @media (max-width: 768px) {
     a {
-    width: 60%;
+    width: 80%;
     display: block;
     text-decoration: none;
     color: inherit;
@@ -355,7 +355,7 @@ a {
     }
 }
 
-.disclammer-section {
+.disclaimer-section {
     display: flex;
     align-items: flex-start;
     gap: 20px;
@@ -364,7 +364,7 @@ a {
     margin: 40px auto;
 }
 
-.disclammer-title {
+.disclaimer-title {
     color: #ffd700;
     flex: 0 0 auto;
     font-size: 28px;
@@ -376,7 +376,7 @@ a {
     font-family: 'Cubic', sans-serif;
 }
 
-.disclammer-text {
+.disclaimer-text {
     color:#fff;
     flex: 1;
     font-size: 14px;
@@ -387,12 +387,12 @@ a {
 }
 
 @media (max-width: 768px) {
-    .disclammer-section {
+    .disclaimer-section {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .disclammer-title {
+    .disclaimer-title {
         border-right: none;
         border-bottom: 2px solid #555;
         padding-bottom: 12px;
@@ -404,12 +404,12 @@ a {
         line-height: 1.2;
     }
 
-    h2.disclammer-title {
+    h2.disclaimer-title {
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    .disclammer-text {
+    .disclaimer-text {
         font-size: 12px; 
         width: 100%;
         margin: 0;  
