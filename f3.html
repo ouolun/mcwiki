@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MC Wiki - In-game Items</title>
+	<link rel="icon" href="dirt.png" type="image/x-icon" />
+	<link rel="stylesheet" href="style.css" />
+	<link rel="preload" as="image" href="sword.gif">
+	<link rel="preload" as="image" href="slime.gif">
+	<link rel="preload" as="image" href="campfire.gif">
+	<link rel="preload" as="image" href="door.gif">
+	<link rel="preload" href="Cubic_11.woff" as="font" type="font/woff" crossorigin="anonymous">
+	<link rel="preload" href="Cubic_11.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+</head>
+<body bgcolor="#303030">
+	<div class="top-background"></div>
+	<div class="headside">
+  		<div class="logo">
+    		<header>
+    			<a href="index.html">
+  					<img src="logo.png">
+  				</a>
+  			</header>
+    	</div>
+    	<div class="navigator">
+    		<a href="index.html">
+    		<div class="menu-container">
+    			<img class="menu-image0" src="door.png" />
+  				<div class="menu-text">
+    				<div class="title">回首頁</div>
+    				<div class="subtitle">Homepage</div>
+  				</div>
+			</div>
+			</a>
+    		<a href="f1.html">
+    		<div class="menu-container">
+  				<img class="menu-image1" src="sword.png" />
+  				<div class="menu-text">
+    				<div class="title">遊戲玩法介紹</div>
+    				<div class="subtitle">How to play</div>
+  				</div>
+			</div>
+			</a>
+			<a href="f2.html">
+    		<div class="menu-container">
+  				<img class="menu-image2" src="slime.png" />
+  				<div class="menu-text">
+    				<div class="title">遊戲生態域介紹</div>
+    				<div class="subtitle">Biome in Minecraft</div>
+  				</div>
+			</div>
+			</a>
+			<a href="f3.html">
+			<div class="menu-container">
+  				<img class="menu-image3" src="campfire.png" />
+  				<div class="menu-text">
+    				<div class="title">遊戲道具介紹</div>
+    				<div class="subtitle">In - game item</div>
+  				</div>
+			</div>
+			</a>
+		</div>
+	</div>
+	<div class="tryit">點擊縮圖查看詳細介紹！</div>
+	<div class="container">
+  		<div class="left-panel">
+  			<div class="thumbnail-row">
+    			<img src="pickaxe/1.png" alt="木鎬"
+  				onclick="showTool('木鎬', '木鎬是新手最早接觸的工具之一，由木材製作而成。雖然製作簡單且資源取得容易，但只能挖掘最基本的方塊如石頭與煤礦。它無法開採鐵礦及更高等級的礦物，耐久度也相對最低，適合作為過渡工具使用。', this.src)">
+
+				<img src="pickaxe/2.png" alt="石鎬"
+  				onclick="showTool('石鎬', '石鎬是玩家邁向進階的重要起點，能夠開採鐵礦、青金石與其他中級資源。相比木鎬，它的耐久度更高、效率更快。由於石頭材料易於取得，石鎬經常成為玩家在冒險初期的主力工具。', this.src)">
+
+				<img src="pickaxe/3.png" alt="鐵鎬"
+  				onclick="showTool('鐵鎬', '鐵鎬是實用性極高的工具，具備優良的耐久度與效率，可挖掘大多數礦物，包括紅石、金礦、鑽石等。它是進入中後期發展的重要門票，同時也是升級成鑽石鎬與獄髓鎬的基礎。', this.src)">
+
+				<img src="pickaxe/4.png" alt="黃金鎬"
+  				onclick="showTool('黃金鎬', '黃金鎬擁有《Minecraft》中最快的基礎開採速度，但其極低的耐久度讓它難以長期使用。儘管金礦相對稀有，黃金鎬在某些情境（如高效率附魔）中仍可短時間派上用場，也常被用來測試附魔效果。', this.src)">
+
+				<img src="pickaxe/5.png" alt="鑽石鎬"
+  				onclick="showTool('鑽石鎬', '鑽石鎬是許多玩家夢寐以求的高階工具，擁有極高的耐久度與開採效率，可挖掘包括黑曜石在內的高硬度方塊。它可搭配各種強力附魔（如效率、耐久、幸運）使用，是探索地底與建設大型工程的理想選擇。', this.src)">
+
+				<img src="pickaxe/6.png" alt="獄髓鎬"
+  				onclick="showTool('獄髓鎬', '獄髓鎬是目前遊戲中最強的鎬子，由鑽石鎬與獄髓錠在鍛造台中結合升級而成。其耐久度與效率均優於鑽石鎬，且具備對抗熔岩的掉落保護效果。它是經驗老道的冒險家或建築師的終極選擇，象徵著對資源掌控與技術的巔峰。', this.src)">
+
+  			</div>
+		</div>
+  		<div class="right-panel">
+    		<div class="tool-title" id="toolTitle">鎬</div>
+    		<div class="tool-description" id="toolDescription">
+      		在《Minecraft》的世界裡，「鎬」是一項不可或缺的重要工具。它主要用於挖掘各種方塊，尤其是石頭類與礦石方塊。從簡單的木鎬到堅不可摧的獄髓鎬，每種材質的鎬都擁有不同的耐久度與開採效率。隨著遊戲進度的推進，選擇合適的鎬子，將大幅影響你的冒險效率與資源收集速度。
+    	</div>
+  	</div>
+</div>
+
+<div class="container">
+  		<div class="left-panel">
+  			<div class="thumbnail-row">
+    			<img src="axe/1.png" alt="木斧"
+  				onclick="showTool1('木斧', '木斧是最初級的斧頭，由木材製作而成。主要用於快速砍伐木頭與木製方塊，雖然製作容易，但耐久度極低。在資源貧乏時可作為暫時使用的工具，也能在早期作為簡單的武器使用。', this.src)">
+
+				<img src="axe/2.png" alt="石斧"
+  				onclick="showTool1('石斧', '石斧是早期冒險者實用的砍木工具，相較木斧更具耐久與效率，能快速處理木方塊，也能造成不俗的攻擊傷害。石材易於取得，因此石斧常成為探索初期的首選裝備之一。', this.src)">
+
+				<img src="axe/3.png" alt="鐵斧"
+ 				onclick="showTool1('鐵斧', '鐵斧結合良好的開採速度與耐久度，是中期玩家常用的斧頭。不僅能高效砍伐樹木，也能在戰鬥中造成可觀傷害。鐵材豐富、可附魔，是建築與戰鬥皆適用的萬用工具。', this.src)">
+
+				<img src="axe/4.png" alt="黃金斧"
+  				onclick="showTool1('黃金斧', '黃金斧擁有極快的攻擊速度與砍木效率，但其耐久度極低，容易快速損壞。儘管實用性有限，若搭配適當附魔或在短時間需求下使用，仍具有戰術價值，特別是在速度優先的情境中。', this.src)">
+
+				<img src="axe/5.png" alt="鑽石斧"
+  				onclick="showTool1('鑽石斧', '鑽石斧擁有極高的耐久與效率，是進階玩家的理想伐木工具，也是一把強力的戰鬥武器。適合搭配「效率」、「鋒利」等附魔，廣泛應用於建築、農場建設與 PvE 對戰中。', this.src)">
+
+				<img src="axe/6.png" alt="獄髓斧"
+  				onclick="showTool1('獄髓斧', '獄髓斧是目前遊戲中最強的斧頭，由鑽石斧升級而來，具備最長耐久與最強攻擊力。特別適合高階玩家用於快速伐木與高傷害戰鬥，並具有抗火與不被熔岩燒毀的特性，是終極生存與戰鬥的象徵。', this.src)">
+
+
+  			</div>
+		</div>
+  		<div class="right-panel">
+    		<div class="tool-title" id="toolTitle1">斧</div>
+    		<div class="tool-description" id="toolDescription1">
+      		在《Minecraft》的世界裡，「斧」是一種多功能的工具，主要用途是砍伐木頭與木製方塊，效率遠高於使用徒手或其他工具。除了作為伐木工具外，斧在戰鬥中也能派上用場，特別是在 Java 版本中，其攻擊力甚至高於劍，能造成強大的單擊傷害。斧子與鎬一樣，依照材質分為木、石、鐵、金、鑽石與獄髓，每種材質都影響耐久與效率。無論你是建築師、伐木工還是戰士，一把好斧頭絕對是你不可或缺的夥伴！
+    	</div>
+  	</div>
+</div>
+
+<div class="container">
+  		<div class="left-panel">
+  			<div class="thumbnail-row">
+    			<img src="sword/1.png" alt="木劍"
+  				onclick="showTool2('木劍', '木劍是玩家最早期的近戰武器之一，由木材製成。雖然攻擊力較低且耐久有限，但製作簡單且資源容易取得，適合新手在遊戲初期用來防禦敵人。木劍適合臨時使用，能有效擊退普通敵人，為後續更強武器做準備。', this.src)">
+
+				<img src="sword/2.png" alt="石劍"
+  				onclick="showTool2('石劍', '石劍提供比木劍更高的攻擊力與耐久度，是許多玩家初期探險與打怪的主力武器。由石頭製作，資源取得方便，能快速擊倒弱敵與一般怪物，是升級武器的第一步。', this.src)">
+
+				<img src="sword/3.png" alt="鐵劍"
+  				onclick="showTool2('鐵劍', '鐵劍是中期玩家重要的近戰武器，具備良好的耐久度和攻擊效率，能有效對抗大部分怪物。鐵劍可附魔增強，使其攻擊力與耐久進一步提升，適合長期冒險和戰鬥。', this.src)">
+
+				<img src="sword/4.png" alt="黃金劍"
+  				onclick="showTool2('黃金劍', '黃金劍擁有遊戲中最快的攻擊速度，但耐久極低，容易損壞。雖然使用壽命短，但若搭配適當附魔，黃金劍在特定情況下能成為高效率的武器。適合喜歡速度與短時間爆發傷害的玩家使用。', this.src)">
+
+				<img src="sword/5.png" alt="鑽石劍"
+  				onclick="showTool2('鑽石劍', '鑽石劍是許多玩家夢寐以求的高階武器，擁有高耐久與強大攻擊力。可搭配多種附魔，提升傷害與使用壽命，是生存與冒險不可或缺的利器。鑽石劍讓玩家在面對強敵時更加從容不迫。', this.src)">
+
+				<img src="sword/6.png" alt="獄髓劍"
+  				onclick="showTool2('獄髓劍', '獄髓劍是目前遊戲中最強的近戰武器，由鑽石劍與獄髓錠鍛造升級而成。它擁有最高的耐久度與攻擊力，並具有特殊的抗火特性。是資深玩家與冒險家在高難度戰鬥中的終極選擇。', this.src)">
+
+
+  			</div>
+		</div>
+  		<div class="right-panel">
+    		<div class="tool-title" id="toolTitle2">劍</div>
+    		<div class="tool-description" id="toolDescription2">
+      		劍是《Minecraft》中玩家最常用的近戰武器，專門用來對抗各種敵對生物。不同材質的劍在攻擊力和耐久度上有所差異，從木劍、石劍、鐵劍到鑽石劍和獄髓劍，性能逐步提升。劍除了基本攻擊外，還可以透過附魔增加傷害、擊退效果或燃燒目標。劍的攻擊速度較快，並且能有效打斷蜘蛛網，是生存和冒險中不可或缺的武器。
+    	</div>
+  	</div>
+</div>
+<script>
+function showToolGeneric(title, description, titleId, descId) {
+  // 從標題元素找到對應的 container
+  const titleElem = document.getElementById(titleId);
+  const descElem = document.getElementById(descId);
+  const container = titleElem.closest('.right-panel').closest('.container');
+  // 取得動畫開始時的高度
+  const startHeight = container.offsetHeight;
+
+  // 先更新內容讓高度變化
+  titleElem.textContent = title;
+  descElem.textContent = description;
+
+  // 用 requestAnimationFrame 讓瀏覽器先完成 DOM 更新，再抓新高度
+  requestAnimationFrame(() => {
+    const endHeight = container.offsetHeight;
+
+    // 套用起始高度 (固定高度避免跳動)
+    container.style.height = startHeight + 'px';
+
+    // 再下一幀開始動畫到目標高度
+    requestAnimationFrame(() => {
+      container.style.transition = 'height 0.4s ease';
+      container.style.height = endHeight + 'px';
+    });
+
+    // 動畫結束後移除 inline style，恢復彈性布局
+    setTimeout(() => {
+      container.style.height = '';
+      container.style.transition = '';
+    }, 400);
+  });
+}
+
+function showTool(title, description, imageSrc) {
+  showToolGeneric(title, description, 'toolTitle', 'toolDescription');
+}
+
+function showTool1(title, description, imageSrc) {
+  showToolGeneric(title, description, 'toolTitle1', 'toolDescription1');
+}
+
+function showTool2(title, description, imageSrc) {
+  showToolGeneric(title, description, 'toolTitle2', 'toolDescription2');
+}
+</script>
+</body>
+</html>
