@@ -1,12 +1,12 @@
 ## Achievements
 You can NOW visit https://ouolun.github.io/mcwiki/ to see the achievements!
-<br><br><br>
+<br>
 
 ## Description
 This is a university course project demonstration and will no longer be maintained or updated.
 Nevertheless, you are still welcome to refer to the syntax and structure of this site or 
 browse the finished work. I hope this can help you with your own university final project! XD
-<br><br><br>
+<br>
 
 ## Disclaimer
 The images, logos, and materials used in this project — including but not limited to Minecraft 
